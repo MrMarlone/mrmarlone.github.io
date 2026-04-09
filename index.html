@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marlon Stamm – Portfolio</title>
+
+    <!-- Fonts: Satoshi (Body) + Cabinet Grotesk (Display) via Fontshare -->
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,900&f[]=satoshi@400,500,700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+    <!-- ===== HEADER / NAV ===== -->
+    <header class="site-header">
+        <!-- Logo -->
+        <a href="#home" class="logo" aria-label="Marlon Stamm – Home">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <rect width="36" height="36" rx="6" fill="none" stroke="currentColor" stroke-width="1.5" />
+                <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+                    font-family="'Cabinet Grotesk', sans-serif" font-weight="800" font-size="14" fill="currentColor"
+                    letter-spacing="-0.5">MS</text>
+            </svg>
+        </a>
+
+        <!-- Icon Nav Pill -->
+        <nav class="icon-nav" aria-label="Hauptnavigation">
+            <a href="#home" class="icon-nav__item active" aria-label="Home">
+                <i data-lucide="house"></i>
+            </a>
+            <a href="#projects" class="icon-nav__item" aria-label="Projekte">
+                <i data-lucide="monitor-dot"></i>
+            </a>
+            <a href="#skills" class="icon-nav__item" aria-label="Skills">
+                <i data-lucide="briefcase"></i>
+            </a>
+            <a href="#tools" class="icon-nav__item" aria-label="Tools">
+                <i data-lucide="wrench"></i>
+            </a>
+            <a href="#about" class="icon-nav__item" aria-label="Über mich">
+                <i data-lucide="user"></i>
+            </a>
+        </nav>
+
+        <!-- Hamburger (mobile + secondary) -->
+        <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+            <i data-lucide="menu"></i>
+        </button>
+    </header>
+
+    <!-- ===== HOME SECTION ===== -->
+    <main>
+        <section id="home" class="hero">
+
+            <!-- Badge -->
+            <span class="hero__badge">STUDENT MEDIENINFORMATIK B. SC.</span>
+
+            <!-- Name Display -->
+            <div class="hero__name" aria-label="Marlon Stamm">
+                <span class="hero__name--solid">MARLON</span>
+                <span class="hero__name--outline">STAMM</span>
+            </div>
+
+            <!-- Contact Buttons -->
+            <div class="hero__contacts" role="list">
+                <a href="mailto:deine@email.de" class="contact-btn" role="listitem">
+                    <i data-lucide="mail"></i>
+                    <span>Mail</span>
+                </a>
+                <a href="https://linkedin.com/in/deinprofil" class="contact-btn" role="listitem" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg class="icon-brand" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/deinname" class="contact-btn contact-btn--active" role="listitem"
+                    target="_blank" rel="noopener noreferrer">
+                    <svg class="icon-brand" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://wa.me/491234567890" class="contact-btn" role="listitem" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg class="icon-brand" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.138.564 4.148 1.546 5.888L.057 23.5l5.77-1.514A11.936 11.936 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.5-5.191-1.373l-.371-.22-3.426.899.916-3.338-.242-.385A9.942 9.942 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+                    </svg>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Profile Photo -->
+            <div class="hero__photo" aria-hidden="true">
+                <!-- Ersetze src mit deinem echten Foto: -->
+                <img src="./assets/profile.jpg" alt="Marlon Stamm" width="320" height="400" loading="lazy" />
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        // Init Lucide icons
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+
+        // Hamburger toggle
+        const hamburger = document.querySelector('.hamburger');
+        hamburger.addEventListener('click', () => {
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', String(!expanded));
+        });
+
+        // Active nav highlight on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navItems = document.querySelectorAll('.icon-nav__item');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navItems.forEach(item => item.classList.remove('active'));
+                    const active = document.querySelector(`.icon-nav__item[href="#${entry.target.id}"]`);
+                    if (active) active.classList.add('active');
+                }
+            });
+        }, { threshold: 0.5 });
+        sections.forEach(s => observer.observe(s));
+    </script>
+</body>
+
+</html>
